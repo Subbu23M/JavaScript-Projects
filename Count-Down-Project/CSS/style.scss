@@ -1,0 +1,29 @@
+// Global Variables
+$fontFamily:'Source Sans 3',
+sans-serif;
+
+body {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: $fontFamily;
+}
+
+.main {
+    margin-top: 8rem;
+
+    h3,
+    h4 {
+        letter-spacing: 1px;
+    }
+
+    .deadline {
+        // convert row into columns
+        display: grid;
+
+        // On X-axis
+        grid-template-columns: repeat(4, 1fr);
+
+        gap: 1rem;
+    }
+}
